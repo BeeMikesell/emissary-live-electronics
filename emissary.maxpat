@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 509.0, 151.0, 946.0, 951.0 ],
+		"rect" : [ 2149.0, 87.0, 1239.0, 951.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,13 +40,167 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontface" : 1,
+					"fontname" : "Monaco",
+					"id" : "obj-11",
+					"linecount" : 17,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 20.152663469314575, 416.5, 431.900003790855408, 261.0 ],
+					"text" : "emissary is a collection of unique instrument(s) and live electronics pieces that utilize a shared Max file. \n\nThis is that file.\n\n\n\nNote that this is a pre-alpha version and many (if not most) intended features are not included yet. For instance, only emissary_zero has any audio functionality at this point. If you're interested in checking out most of what I've been working on, let me point you to the subpatches *p instsel* and *p cues*. Much of the legwork done to ensure the longevity of this work is in those subpatches. This primarily includes the piece select system which will allow this Max file to be used for many sonically unique, yet similar, pieces."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-51",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 8,
+							"minor" : 3,
+							"revision" : 1,
+							"architecture" : "x64",
+							"modernui" : 1
+						}
+,
+						"classnamespace" : "box",
+						"rect" : [ 2239.0, 149.0, 1237.0, 872.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"gridonopen" : 1,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
+						"boxanimatetime" : 200,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
+						"boxes" : [ 							{
+								"box" : 								{
+									"fontface" : 0,
+									"fontname" : "Monaco",
+									"fontsize" : 14.0,
+									"id" : "obj-34",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 77.0, 22.5, 367.0, 24.0 ],
+									"text" : "Must be connected to the internet to view."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-1",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 77.0, 147.0, 58.0, 22.0 ],
+									"text" : "loadbang"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 0,
+									"fontname" : "Monaco",
+									"fontsize" : 36.0,
+									"id" : "obj-54",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 77.0, 84.0, 102.0, 51.0 ],
+									"text" : "MuBu"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-35",
+									"maxclass" : "jweb",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 77.0, 221.0, 801.0, 479.0 ],
+									"rendermode" : 0,
+									"url" : "https://forum.ircam.fr/projects/detail/mubu/"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-26",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 77.0, 184.0, 249.0, 22.0 ],
+									"text" : "url https://forum.ircam.fr/projects/detail/mubu/"
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-26", 0 ],
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-35", 0 ],
+									"source" : [ "obj-26", 0 ]
+								}
+
+							}
+ ]
+					}
+,
+					"patching_rect" : [ 566.5, 42.0, 93.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"description" : "",
+						"digest" : "",
+						"globalpatchername" : "",
+						"tags" : ""
+					}
+,
+					"text" : "p dependencies"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"hidden" : 1,
 					"id" : "obj-30",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 32.0, 105.0, 59.0, 22.0 ],
+					"patching_rect" : [ 30.152663469314575, 115.0, 59.0, 22.0 ],
 					"text" : "r reset-all"
 				}
 
@@ -60,7 +214,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 352.352941274642944, 105.0, 101.923895299434662, 36.0 ],
+					"patching_rect" : [ 350.50560474395752, 115.0, 101.923895299434662, 36.0 ],
 					"text" : "May click on bubble, use arrow keys, or letters"
 				}
 
@@ -79,7 +233,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 334.0, 94.0, 126.0, 23.0 ],
+					"patching_rect" : [ 332.152663469314575, 104.0, 126.0, 23.0 ],
 					"text_width" : 69.0
 				}
 
@@ -95,9 +249,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 332.352941274642944, 173.0, 84.0, 77.0 ],
+					"patching_rect" : [ 330.50560474395752, 183.0, 84.0, 77.0 ],
 					"rounded" : 100.0,
-					"text" : "Cue",
+					"text" : "M",
 					"textoncolor" : [ 0.674509803921569, 0.831372549019608, 0.705882352941177, 1.0 ]
 				}
 
@@ -111,7 +265,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 231.5, 160.903954565525055, 81.0, 22.0 ],
+					"patching_rect" : [ 229.652663469314575, 170.903954565525055, 81.0, 22.0 ],
 					"text" : "r advancecue"
 				}
 
@@ -124,7 +278,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 20.152663469314575, 1118.510200500488281, 425.0, 21.0 ],
+					"patching_rect" : [ 20.152663469314575, 1402.510208964347839, 425.0, 21.0 ],
 					"text" : "MAYBE ONE DAY..."
 				}
 
@@ -137,7 +291,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 20.152663469314575, 1142.510200500488281, 613.0, 111.0 ],
+					"patching_rect" : [ 20.152663469314575, 1426.510208964347839, 613.0, 111.0 ],
 					"text" : "Integrated score following system\nModdable settings for end user beyond texture, allowing for extensive customization with the potential for use beyond 'The Emissary Collection'\nFully custom application (using opensource software—PD, SuperCollider, and/or other languages—that expands on Emissary as an interactive performance assistant (not too unlike George Lewis' voyager) that is incredibly simple to use (even moreso than a well-designed Maxpatch UI)"
 				}
 
@@ -150,7 +304,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 628.152663469314575, 908.843532562255859, 382.0, 21.0 ],
+					"patching_rect" : [ 628.152663469314575, 1192.843541026115417, 382.0, 21.0 ],
 					"text" : "PLANNED MINOR FEATURES"
 				}
 
@@ -159,12 +313,12 @@
 				"box" : 				{
 					"fontname" : "Monaco",
 					"id" : "obj-59",
-					"linecount" : 8,
+					"linecount" : 10,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 628.152663469314575, 932.843532562255859, 492.0, 126.0 ],
-					"text" : "• Editable 'Default Gain\" modifier for end user\n• Editable 'Default Amplitude\" modifier for end user\n• Swap between cues using letter keys on keyboard (key)\n• Add status text showing the active piece selection and other parameters (helps alleviate alternating piece selection bug)\n• Be sure to add all extentions/plugins to the Resources folder in the external app\n• Use reset-all to configure values of 0 when necessary (`)"
+					"patching_rect" : [ 628.152663469314575, 1216.843541026115417, 492.0, 156.0 ],
+					"text" : "• Editable 'Default Gain\" modifier for end user\n• Editable 'Default Amplitude\" modifier for end user\n• Swap between cues using letter keys on keyboard (key)\n• Add status text showing the active piece selection and other parameters (helps alleviate alternating piece selection bug)\n• Be sure to add all extentions/plugins to the Resources folder in the external app\n• Use reset-all to configure values of 0 when necessary (`)\n• Add in-patch web browser to interact with other emissary users (discord?)"
 				}
 
 			}
@@ -178,7 +332,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 192.147058725357056, 226.75, 45.0, 34.0 ],
+					"patching_rect" : [ 190.299722194671631, 236.75, 45.0, 34.0 ],
 					"text" : "Reset\nGain",
 					"textjustification" : 1
 				}
@@ -193,8 +347,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 257.0, 8.0, 197.0, 26.0 ],
-					"text" : "by Bradley Mikesell"
+					"patching_rect" : [ 261.152663469314575, 18.0, 191.0, 26.0 ],
+					"text" : "by bradley mikesell"
 				}
 
 			}
@@ -206,7 +360,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 250.0, 87.5, 68.0, 22.0 ],
+					"patching_rect" : [ 248.152663469314575, 97.5, 68.0, 22.0 ],
 					"text" : "r ampslider"
 				}
 
@@ -221,7 +375,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 292.0, 226.75, 45.0, 34.0 ],
+					"patching_rect" : [ 290.152663469314575, 236.75, 45.0, 34.0 ],
 					"text" : "Reset\nAmp",
 					"textjustification" : 1
 				}
@@ -238,7 +392,7 @@
 					"outlettype" : [ "bang" ],
 					"outlinecolor" : [ 0.674509803921569, 0.831372549019608, 0.705882352941177, 1.0 ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 298.352941274642944, 258.205882549285889, 32.294117450714111, 32.294117450714111 ],
+					"patching_rect" : [ 296.50560474395752, 268.205882549285889, 32.294117450714111, 32.294117450714111 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "off", "on" ],
@@ -261,7 +415,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 345.0, 292.5, 68.0, 22.0 ],
+					"patching_rect" : [ 343.152663469314575, 302.5, 68.0, 22.0 ],
 					"text" : "s ampreset"
 				}
 
@@ -273,22 +427,25 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 461.5, 8.0, 490.0, 21.0 ],
+					"patching_rect" : [ 459.152663469314575, 18.0, 247.0, 21.0 ],
 					"text" : "Compatible with Max Version 8.3.1"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"fontface" : 0,
+					"bgcolor" : [ 1.0, 0.56078431372549, 0.227450980392157, 1.0 ],
+					"fontface" : 1,
 					"fontname" : "Monaco",
 					"fontsize" : 12.0,
 					"id" : "obj-46",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 374.0, 70.0, 80.0, 21.0 ],
-					"text" : "PRE-ALPHA"
+					"patching_rect" : [ 365.152663469314575, 74.5, 80.0, 21.0 ],
+					"text" : "PRE-ALPHA",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"textjustification" : 1
 				}
 
 			}
@@ -300,7 +457,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 628.152663469314575, 453.5, 133.0, 21.0 ],
+					"patching_rect" : [ 20.152663469314575, 828.500008463859558, 133.0, 21.0 ],
 					"text" : "KNOWN BUGS"
 				}
 
@@ -313,7 +470,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 628.152663469314575, 476.5, 606.0, 291.0 ],
+					"patching_rect" : [ 20.152663469314575, 851.500008463859558, 606.0, 291.0 ],
 					"text" : "• p markov not working due to previous bug fix (see pitch shift subpatch)\n• Gain and Amp. values jump on full audio reset\n• Repeat selection of same piece alternates the toggle between 0 and 1 instead of just staying on 1\n• Amplification turns on before 1st cue. Revisit amplification in 'cues' subpatch\n• Max cue is currently 26 while using letters to jump around, irrespective of # of cues in specific piece\n• Letter cue advancing needs to have a toggle, otherwise any use of the keyboard in-app jumps around cues. Especially an issue if the user had previously selected their piece since that menu is also affected by arrow keys\n• Advance cue bubble click will go backwards if left or down arrow keys were used previously (could be something else as this is inconsistent)\n• Letter cue shortcuts don't work with uppercase. Add ASCII ints for those\n• Lowest gain level still has sound. Separate gain and amplification input levels from overal volume\n• Patch selection tied to toggles, which means a patch might not end at the approrpiate time, especially when it is acting as a \"secondary patch\"\n• Some patches are incomptible with jumping around to rehearse\n• Secondary bangs only first on piece set or reset"
 				}
 
@@ -326,34 +483,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 20.152663469314575, 908.843532562255859, 167.0, 21.0 ],
+					"patching_rect" : [ 20.152663469314575, 1192.843541026115417, 167.0, 21.0 ],
 					"text" : "PLANNED CORE FEATURES"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Monaco",
-					"id" : "obj-31",
-					"linecount" : 8,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 22.152663469314575, 476.5, 604.0, 126.0 ],
-					"text" : "• Exclusive patch selection\n• ` now resets specific parameters to zero in addition to the cue state\n• The compromised temporary solution for inconsistencies between patches when jumping between them is that ` now resets the piece selection, forcing the performer to reselect their piece\n• Determined cue order for emissary_zero\n\n• TBD Wrote patches for emissary_zero"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontface" : 1,
-					"fontname" : "Monaco",
-					"id" : "obj-26",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 22.152663469314575, 452.5, 162.0, 21.0 ],
-					"text" : "RECENT ADDITIONS"
 				}
 
 			}
@@ -368,7 +499,7 @@
 					"outlettype" : [ "bang" ],
 					"outlinecolor" : [ 0.674509803921569, 0.831372549019608, 0.705882352941177, 1.0 ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 198.5, 258.205882549285889, 32.294117450714111, 32.294117450714111 ],
+					"patching_rect" : [ 196.652663469314575, 268.205882549285889, 32.294117450714111, 32.294117450714111 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "off", "on" ],
@@ -391,7 +522,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 204.5, 292.5, 67.0, 22.0 ],
+					"patching_rect" : [ 202.652663469314575, 302.5, 67.0, 22.0 ],
 					"text" : "s gainreset"
 				}
 
@@ -2014,7 +2145,6 @@
 										"style" : "",
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
-										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-44",
@@ -2074,7 +2204,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 869.5, 520.0, 50.0, 22.0 ],
-													"text" : "3"
+													"text" : "7"
 												}
 
 											}
@@ -2086,7 +2216,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 925.0, 520.0, 50.0, 22.0 ],
-													"text" : "7"
+													"text" : "8"
 												}
 
 											}
@@ -2122,7 +2252,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 755.5, 520.0, 50.0, 22.0 ],
-													"text" : "5"
+													"text" : "6"
 												}
 
 											}
@@ -2146,7 +2276,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 702.0, 520.0, 50.0, 22.0 ],
-													"text" : "6"
+													"text" : "5"
 												}
 
 											}
@@ -3224,7 +3354,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 22.0, 376.5, 53.0, 22.0 ],
+					"patching_rect" : [ 20.152663469314575, 386.5, 53.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -3245,7 +3375,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 22.0, 233.25, 127.0, 26.0 ],
+					"patching_rect" : [ 20.152663469314575, 243.25, 127.0, 26.0 ],
 					"text" : "Piece Select",
 					"textjustification" : 1
 				}
@@ -3262,7 +3392,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 23.876470446586609, 258.205882549285889, 122.952941179275513, 18.0 ],
+					"patching_rect" : [ 22.029133915901184, 268.205882549285889, 122.952941179275513, 18.0 ],
 					"saved_attribute_attributes" : 					{
 						"activebgcolor" : 						{
 							"expression" : ""
@@ -3302,7 +3432,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 109.352941036224365, 200.0, 158.0, 23.0 ],
+					"patching_rect" : [ 107.50560450553894, 210.0, 158.0, 23.0 ],
 					"text" : "0dB >      ------ "
 				}
 
@@ -3315,7 +3445,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 20.152663469314575, 932.843532562255859, 606.0, 141.0 ],
+					"patching_rect" : [ 20.152663469314575, 1216.843541026115417, 606.0, 141.0 ],
 					"text" : "• Variable fades between cues\n• A much more comprehensive set of processing subpatches that have the potential for multiple unique soundworlds\n• Moddable settings for each piece that determine overall texture (ie. sparse, normal, thick)\n• Automated panning system with potential for highly variable parameters\nMaster reverb\n• Somewhat extensive README providing the user with all the necessary info on how to use Emissary (keyboard functions, etc.)"
 				}
 
@@ -3328,7 +3458,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 151.5, 87.5, 54.0, 22.0 ],
+					"patching_rect" : [ 149.652663469314575, 97.5, 54.0, 22.0 ],
 					"text" : "r inslider"
 				}
 
@@ -3342,7 +3472,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 44.352941036224365, 349.0, 26.0, 29.0 ],
+					"patching_rect" : [ 42.50560450553894, 359.0, 26.0, 29.0 ],
 					"text" : "R",
 					"textjustification" : 1
 				}
@@ -3357,7 +3487,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 44.352941036224365, 312.0, 26.0, 29.0 ],
+					"patching_rect" : [ 42.50560450553894, 322.0, 26.0, 29.0 ],
 					"text" : "L",
 					"textjustification" : 1
 				}
@@ -3371,7 +3501,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 22.0, 281.205882549285889, 57.0, 22.0 ],
+					"patching_rect" : [ 20.152663469314575, 291.205882549285889, 57.0, 22.0 ],
 					"text" : "r displayr"
 				}
 
@@ -3387,7 +3517,7 @@
 					"numoutlets" : 1,
 					"offcolor" : [ 0.423529411764706, 0.380392156862745, 0.403921568627451, 1.0 ],
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 74.0, 346.0, 350.0, 35.0 ],
+					"patching_rect" : [ 72.152663469314575, 356.0, 350.0, 35.0 ],
 					"tepidcolor" : [ 0.6, 0.729412, 0.0, 1.0 ],
 					"warmcolor" : [ 0.85098, 0.85098, 0.0, 1.0 ]
 				}
@@ -3439,7 +3569,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-74",
@@ -3649,7 +3778,6 @@
 									}
 ,
 									"patching_rect" : [ 955.500010251998901, 933.0, 63.0, 22.0 ],
-									"presentation_linecount" : 2,
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -3853,7 +3981,6 @@
 									}
 ,
 									"patching_rect" : [ 849.500010251998901, 933.0, 90.0, 22.0 ],
-									"presentation_linecount" : 3,
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -3875,8 +4002,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 100.041665852069855, 793.000008702278137, 244.916668295860262, 81.0 ],
-									"presentation_linecount" : 7,
+									"patching_rect" : [ 100.041665852069855, 793.000008702278137, 249.0, 81.0 ],
 									"text" : "Naming Convention:\n[main-patch] - [initiated-patch]\n\nsends/recieves use the same convention, except the patch that receives the bang is appended to the end"
 								}
 
@@ -3891,7 +4017,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 376.0, 1096.666667819023132, 306.0, 21.0 ],
-									"presentation_linecount" : 3,
 									"text" : "Patches only affected by secondary bangs"
 								}
 
@@ -3996,7 +4121,6 @@
 									}
 ,
 									"patching_rect" : [ 455.500010251998901, 1125.666667819023132, 79.0, 22.0 ],
-									"presentation_linecount" : 3,
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -12606,7 +12730,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 70.0, 270.0, 50.0, 22.0 ],
-													"text" : "31"
+													"text" : "-80"
 												}
 
 											}
@@ -15015,7 +15139,7 @@
 													"cursor_size" : 3,
 													"cursor_sizeunit" : 0,
 													"cursor_visible" : 1,
-													"domain_bounds" : [ -16.326530612244898, 5262.199546485260726 ],
+													"domain_bounds" : [ 0.0, 1.0 ],
 													"domainruler_bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 													"domainruler_fgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 													"domainruler_grid" : 0,
@@ -16860,7 +16984,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 352.352941274642944, 263.352941274642944, 44.0, 22.0 ],
+					"patching_rect" : [ 350.50560474395752, 273.352941274642944, 44.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -16876,12 +17000,12 @@
 				"box" : 				{
 					"fontname" : "Monaco",
 					"id" : "obj-24",
-					"linecount" : 3,
+					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 461.5, 164.0, 475.0, 51.0 ],
-					"text" : "Emissary Zero: Trumpet Duet\nEmissary One: Tuba Solo\nEmissary Two: TBD"
+					"patching_rect" : [ 459.152663469314575, 128.0, 247.0, 66.0 ],
+					"text" : "emissary_zero: Trumpet Duet\nemissary_one: Tuba Solo\nemissary_two: TBD\n..."
 				}
 
 			}
@@ -16893,21 +17017,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 461.5, 140.0, 477.0, 21.0 ],
+					"patching_rect" : [ 459.152663469314575, 104.0, 247.0, 21.0 ],
 					"text" : "The Emissary Collection:"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Monaco",
-					"id" : "obj-11",
-					"linecount" : 4,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 461.5, 70.0, 426.0, 66.0 ],
-					"text" : "The live electronics in this Max file are designed to be used with a collection of solo instrumental pieces. Each of these pieces is concieved of as being an \"Emissary\" in communication with the live electronics."
 				}
 
 			}
@@ -16919,7 +17030,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 83.0, 281.205882549285889, 56.0, 22.0 ],
+					"patching_rect" : [ 81.152663469314575, 291.205882549285889, 56.0, 22.0 ],
 					"text" : "r displayl"
 				}
 
@@ -16935,7 +17046,7 @@
 					"numoutlets" : 1,
 					"offcolor" : [ 0.423529411764706, 0.380392156862745, 0.403921568627451, 1.0 ],
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 74.0, 309.0, 350.0, 35.0 ],
+					"patching_rect" : [ 72.152663469314575, 319.0, 350.0, 35.0 ],
 					"tepidcolor" : [ 0.6, 0.729412, 0.0, 1.0 ],
 					"warmcolor" : [ 0.85098, 0.85098, 0.0, 1.0 ]
 				}
@@ -16945,14 +17056,13 @@
 				"box" : 				{
 					"fontface" : 0,
 					"fontname" : "Monaco",
-					"fontsize" : 14.0,
+					"fontsize" : 12.0,
 					"id" : "obj-34",
-					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 22.0, 51.0, 340.0, 41.0 ],
-					"text" : "for instrument(s)\nand live electronics"
+					"patching_rect" : [ 20.152663469314575, 74.5, 293.0, 21.0 ],
+					"text" : "for instrument(s) and live electronics"
 				}
 
 			}
@@ -16965,8 +17075,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 22.0, 8.0, 188.0, 51.0 ],
-					"text" : "Emissary"
+					"patching_rect" : [ 20.152663469314575, 18.0, 188.0, 51.0 ],
+					"text" : "emissary"
 				}
 
 			}
@@ -16979,7 +17089,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 198.5, 105.0, 136.0, 26.0 ],
+					"patching_rect" : [ 196.652663469314575, 115.0, 136.0, 26.0 ],
 					"text" : "Amplification",
 					"textjustification" : 1
 				}
@@ -16992,7 +17102,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 275.190841436386108, 292.5, 64.0, 22.0 ],
+					"patching_rect" : [ 273.343504905700684, 302.5, 64.0, 22.0 ],
 					"text" : "s ampcont"
 				}
 
@@ -17008,7 +17118,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 250.0, 132.5, 45.0, 158.0 ],
+					"patching_rect" : [ 248.152663469314575, 142.5, 45.0, 158.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "slider[3]",
@@ -17032,7 +17142,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 298.352941274642944, 144.75, 42.0, 22.0 ],
+					"patching_rect" : [ 296.50560474395752, 154.75, 42.0, 22.0 ],
 					"text" : "r cuen"
 				}
 
@@ -17046,7 +17156,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 315.852941274642944, 144.75, 117.0, 26.0 ],
+					"patching_rect" : [ 314.00560474395752, 154.75, 117.0, 26.0 ],
 					"text" : "Advance Cue",
 					"textjustification" : 1
 				}
@@ -17598,7 +17708,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 63.352941036224365, 201.0, 45.0, 22.0 ],
+					"patching_rect" : [ 61.50560450553894, 211.0, 45.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -17614,12 +17724,11 @@
 				"box" : 				{
 					"fontname" : "Monaco",
 					"id" : "obj-10",
-					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 461.5, 32.0, 709.0, 36.0 ],
-					"text" : "This piece makes extensive use of MuBu by the ISMM Team @ Ircam (https://forum.ircam.fr/projects/detail/mubu/) - - - - - - (consider keeping everything vanilla)"
+					"patching_rect" : [ 459.152663469314575, 42.0, 104.0, 21.0 ],
+					"text" : "Dependencies:"
 				}
 
 			}
@@ -17632,7 +17741,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 44.352941036224365, 132.5, 82.0, 26.0 ],
+					"patching_rect" : [ 42.50560450553894, 142.5, 82.0, 26.0 ],
 					"text" : "Audio",
 					"textjustification" : 1
 				}
@@ -17648,7 +17757,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 63.352941036224365, 157.5, 44.0, 44.0 ],
+					"patching_rect" : [ 61.50560450553894, 167.5, 44.0, 44.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "off", "on" ],
@@ -17674,7 +17783,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 132.0, 105.0, 72.0, 26.0 ],
+					"patching_rect" : [ 130.152663469314575, 115.0, 72.0, 26.0 ],
 					"text" : "Gain",
 					"textjustification" : 1
 				}
@@ -17691,7 +17800,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 151.5, 132.5, 45.0, 158.0 ],
+					"patching_rect" : [ 149.652663469314575, 142.5, 45.0, 158.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "inslider",
@@ -17714,7 +17823,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 137.0, 292.5, 62.0, 22.0 ],
+					"patching_rect" : [ 135.152663469314575, 302.5, 62.0, 22.0 ],
 					"text" : "s insliderx"
 				}
 
@@ -17785,7 +17894,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 913.0, 225.0, 50.0, 22.0 ],
-									"text" : "set 48"
+									"text" : "set 0"
 								}
 
 							}
@@ -18256,7 +18365,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 416.5, 162.0, 51.0, 23.0 ],
-									"text" : "-1 dB",
+									"text" : "-24 dB",
 									"textjustification" : 1
 								}
 
@@ -19374,7 +19483,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 22.0, 400.5, 99.0, 22.0 ],
+					"patching_rect" : [ 81.152663469314575, 386.5, 99.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -19395,7 +19504,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 22.0, 94.0, 432.0, 304.5 ],
+					"patching_rect" : [ 20.152663469314575, 104.0, 432.0, 304.5 ],
 					"proportion" : 0.5
 				}
 
@@ -19409,7 +19518,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 22.0, 8.0, 432.0, 84.0 ],
+					"patching_rect" : [ 20.152663469314575, 18.0, 432.0, 84.0 ],
 					"proportion" : 0.5
 				}
 
