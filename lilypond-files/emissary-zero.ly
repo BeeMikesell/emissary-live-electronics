@@ -21,8 +21,9 @@
 }
 
 \header {
-  title = "emissary_zero"
-  composer = "bradley mikesell"
+  title =  \markup { \fontsize #1 "emissary_zero" }
+  composer = \markup { \fontsize #1.5  "bradley mikesell" }
+  poet = \markup { \fontsize #1.5  "score" }
   tagline = "Copyright © 2022 Mikesell Music. All Rights Reserved."
 }
 
@@ -52,7 +53,8 @@ trumpet-one = \relative c'' {
   [bes32->\> bes bes bes \once\omit Accidental bes\p] s4
   \bar "" \break
   [e16\<(dis f g gis b\f)] 
-  \tri_mark s8. s8. s8. s2
+  \tri_mark 
+  s8. s8. s8. s2
   [fis16,\p\< fis fis fis fis->\p] s4
   [d16\p\< d d->\f]
   \bar "" \break
