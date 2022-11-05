@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 2311.0, 308.0, 1101.0, 670.0 ],
+		"rect" : [ 99.0, 87.0, 921.0, 831.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -69,7 +69,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 2051.0, 109.0, 640.0, 480.0 ],
+						"rect" : [ 1118.0, 109.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -6387,7 +6387,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 1826.0, 87.0, 1826.0, 959.0 ],
+						"rect" : [ 98.0, 87.0, 1852.0, 959.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -6719,7 +6719,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 2786.0, 87.0, 892.0, 959.0 ],
+										"rect" : [ 866.0, 87.0, 892.0, 959.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -7133,7 +7133,7 @@
 														}
 ,
 														"classnamespace" : "box",
-														"rect" : [ 2002.0, 140.0, 1724.0, 959.0 ],
+														"rect" : [ 98.0, 140.0, 1724.0, 959.0 ],
 														"bglocked" : 0,
 														"openinpresentation" : 0,
 														"default_fontsize" : 12.0,
@@ -7275,8 +7275,8 @@
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "signal" ],
-																	"patching_rect" : [ 230.0, 867.0, 40.0, 22.0 ],
-																	"text" : "*~ 0.5"
+																	"patching_rect" : [ 230.0, 867.0, 47.0, 22.0 ],
+																	"text" : "*~ 0.35"
 																}
 
 															}
@@ -7287,8 +7287,8 @@
 																	"numinlets" : 2,
 																	"numoutlets" : 1,
 																	"outlettype" : [ "signal" ],
-																	"patching_rect" : [ 144.0, 867.0, 40.0, 22.0 ],
-																	"text" : "*~ 0.5"
+																	"patching_rect" : [ 144.0, 867.0, 47.0, 22.0 ],
+																	"text" : "*~ 0.35"
 																}
 
 															}
@@ -14974,7 +14974,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 2992.0, 384.0, 640.0, 480.0 ],
+										"rect" : [ 1118.0, 384.0, 640.0, 480.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -15003,6 +15003,30 @@
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
 										"boxes" : [ 											{
+												"box" : 												{
+													"id" : "obj-5",
+													"maxclass" : "message",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 249.0, 125.0, 29.5, 22.0 ],
+													"text" : "1"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-1",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 1,
+													"outlettype" : [ "bang" ],
+													"patching_rect" : [ 249.0, 86.0, 58.0, 22.0 ],
+													"text" : "loadbang"
+												}
+
+											}
+, 											{
 												"box" : 												{
 													"id" : "obj-12",
 													"maxclass" : "newobj",
@@ -15090,10 +15114,10 @@
 													"clipheight" : 91.0,
 													"data" : 													{
 														"clips" : [ 															{
-																"absolutepath" : "/Users/bradleymikesellii/Documents/Documents - Bradley’s MacBook Pro/Music/Composition/Compositions/2022/Emissary - Instrument and Live Electronics/emissary-live-electronics/fm-em0.wav",
+																"absolutepath" : "/Users/bradleymikesellii/Documents/Documents - Bradley’s MacBook Pro/Music/Composition/Compositions/2022/Emissary - Instrument and Live Electronics/emissary-live-electronics/audio/fm-em0.wav",
 																"filename" : "fm-em0.wav",
 																"filekind" : "audiofile",
-																"id" : "u192011484",
+																"id" : "u530001801",
 																"loop" : 0,
 																"content_state" : 																{
 
@@ -15137,6 +15161,13 @@
  ],
 										"lines" : [ 											{
 												"patchline" : 												{
+													"destination" : [ "obj-5", 0 ],
+													"source" : [ "obj-1", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
 													"destination" : [ "obj-3", 0 ],
 													"source" : [ "obj-10", 0 ]
 												}
@@ -15170,6 +15201,13 @@
 													"destination" : [ "obj-6", 0 ],
 													"order" : 1,
 													"source" : [ "obj-3", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-10", 0 ],
+													"source" : [ "obj-5", 0 ]
 												}
 
 											}
@@ -15332,7 +15370,7 @@
 													"outlettype" : [ "list", "float", "float", "float", "float", "list", "int" ],
 													"parameter_enable" : 0,
 													"patching_rect" : [ 438.25, 300.0, 360.0, 155.0 ],
-													"setfilter" : [ 0, 5, 1, 0, 0, 6400.0, 16.600000381469727, 3.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
+													"setfilter" : [ 0, 5, 1, 0, 0, 1452.0, 16.600000381469727, 3.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
 												}
 
 											}
@@ -15859,7 +15897,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 1937.0, 168.0, 892.0, 959.0 ],
+										"rect" : [ 701.0, 241.0, 892.0, 432.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -15931,7 +15969,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 408.0, 209.0, 29.5, 22.0 ],
-													"text" : "0.2"
+													"text" : "0.5"
 												}
 
 											}
@@ -16112,8 +16150,8 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "signal" ],
-													"patching_rect" : [ 270.0, 652.5, 40.0, 22.0 ],
-													"text" : "*~ 0.5"
+													"patching_rect" : [ 270.0, 652.5, 30.0, 22.0 ],
+													"text" : "*~ 1"
 												}
 
 											}
@@ -16559,7 +16597,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 813.0, 126.0, 892.0, 951.0 ],
+										"rect" : [ 99.0, 87.0, 1659.0, 999.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -16793,7 +16831,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 508.0, 1243.0, 134.0, 22.0 ],
-													"text" : "1246 1062"
+													"text" : "6970 3658"
 												}
 
 											}
@@ -16877,7 +16915,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 768.0, 1037.5, 50.5, 22.0 ],
-													"text" : "5824"
+													"text" : "1047"
 												}
 
 											}
@@ -17248,12 +17286,12 @@
 													"cursor_nearest" : 0,
 													"cursor_nearestcolor" : [ 1.0, 0.0, 0.0, 1.0 ],
 													"cursor_noringoffset" : 0,
-													"cursor_position" : 1246.0,
+													"cursor_position" : 6970.0,
 													"cursor_shape" : "bar",
 													"cursor_size" : 3,
 													"cursor_sizeunit" : 0,
 													"cursor_visible" : 1,
-													"domain_bounds" : [ 0.0, 3527.979166666666515 ],
+													"domain_bounds" : [ 0.0, 1.0 ],
 													"domainruler_bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 													"domainruler_fgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 													"domainruler_grid" : 0,
@@ -17300,7 +17338,7 @@
 													"tabs_position" : 0,
 													"tabs_size" : 20,
 													"tabs_visible" : 1,
-													"tool" : "draw",
+													"tool" : "edit",
 													"toolbar_bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 													"toolbar_position" : 1,
 													"toolbar_size" : 30,
@@ -20363,7 +20401,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 962.0, 87.0, 796.0, 452.0 ],
+										"rect" : [ 866.0, 451.0, 892.0, 432.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -21490,7 +21528,7 @@
 													"cursor_size" : 3,
 													"cursor_sizeunit" : 0,
 													"cursor_visible" : 1,
-													"domain_bounds" : [ -15.0, 1010.645833333333258 ],
+													"domain_bounds" : [ 0.0, 1.0 ],
 													"domainruler_bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 													"domainruler_fgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 													"domainruler_grid" : 0,
@@ -24135,7 +24173,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 913.0, 225.0, 50.0, 22.0 ],
-									"text" : "set 48"
+									"text" : "set 0"
 								}
 
 							}
@@ -24606,7 +24644,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 416.5, 162.0, 51.0, 23.0 ],
-									"text" : "-1 dB",
+									"text" : "-24 dB",
 									"textjustification" : 1
 								}
 
@@ -25907,8 +25945,8 @@
 			}
 , 			{
 				"name" : "fm-em0.wav",
-				"bootpath" : "~/Documents/Documents - Bradley’s MacBook Pro/Music/Composition/Compositions/2022/Emissary - Instrument and Live Electronics/emissary-live-electronics",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Documents/Documents - Bradley’s MacBook Pro/Music/Composition/Compositions/2022/Emissary - Instrument and Live Electronics/emissary-live-electronics/audio",
+				"patcherrelativepath" : "./audio",
 				"type" : "WAVE",
 				"implicit" : 1
 			}

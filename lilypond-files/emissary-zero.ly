@@ -23,7 +23,7 @@
 \header {
   title = "emissary_zero"
   composer = "bradley mikesell"
-  copyright = "Copyright © 2022 Mikesell Music. All Rights Reserved."
+  tagline = "Copyright © 2022 Mikesell Music. All Rights Reserved."
 }
 
 global = {
